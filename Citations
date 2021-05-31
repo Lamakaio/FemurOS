@@ -1,0 +1,5 @@
+"Paging code tends to be quite ugly, but it'll probably be decent after your fifth design revision." osdev
+"We assume that any value on the stack which is in the range of the stack (old_stack_pointer < x < initial_esp) is a pushed EBP. This will, unfortunately, completely trash any value which isn't an EBP but just happens to be in this range. Oh well, these things happen. " james molloy
+"No one who isn't already a seasoned developer with years of experience in several languages and environments should even be considering OS Dev yet. A decade of programming, including a few years of low-level coding in assembly language and/or a systems language such as C, is pretty much the minimum necessary to even understand the topic well enough to work in it." osdev
+"the question of which other place provides a tutorial, good explanations, or easy-to-understand reading is often asked. However, they do not exist. (...) In fact, the vast majority of tutorials currently out there are known to be broken in at least one way, so you are generally better off not trusting them in the first place. "
+
