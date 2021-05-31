@@ -1,18 +1,13 @@
-Pour compiler : "make" créé un fichier myos.iso.
-make start utilises qemu pour executer l'os.
+To build : just run make. 
 
-Les outils nécéssaire sont :
--un cross compilateur avec une cible générique (si son nom est différent du mien, il suffit de changer la variable CC du makefile pour gcc et AS pour as.)
--xorriso pour créer le fichier iso
--qemu pour les architectures x86.
+Required tools : 
+- A cross compiler to a generic i686 target. Change the CC and AS vars in the makefile for the names.
+- xorriso to create the iso
+- qemu to run the OS
 
 
-Les fichiers sont théoriquement répartis de la manière suivante :
--les ficheirs spécifiques à l'architecture (drivers, boot, gestion des pages) sont dans arch/i386
--les fichiers spécifiques au fonctionnement du noyau sont dans kernel
--les fichiers pour des additions exterieurs au noyau (shell et ses programmes globalement) sont dans modules
--les fichiers implémentant des fonctions qui auraient vocation à être dans une librairie standard sont dans lib.
-
-Les headers sont rassemblées sauf pour les librairies. Certains headers n'ont pas de sources (io.h).
-
-Le rapport est au format pdf.
+The repository in organised in the following manner : 
+- arch-specific files are in arch/i686
+- kernel-specific files are in kernel/
+- files related to "external" programs (only the shell) are in modules/
+- files that should be included in a kind of standard lib are in lib/
